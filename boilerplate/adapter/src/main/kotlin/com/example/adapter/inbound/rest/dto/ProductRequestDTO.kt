@@ -1,15 +1,13 @@
 package com.example.adapter.inbound.rest.dto
 
 import com.example.domain.entities.Product
+import com.example.domain.enums.ProductName
+import com.fasterxml.jackson.annotation.JsonProperty
 
 data class ProductRequestDTO(
+    @JsonProperty("name")
     val name: String
-){
-    fun toDomain() = Product(
-        name = com.example.domain.enums.ProductName.valueOf(name)
-    )
-}
-
+)
 data class ProductResponseDTO(
     val id: String,
     val name: String
