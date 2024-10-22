@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.PathVariable
 @RestController
 @RequestMapping("/products")
 class ProductController(
-//    private val createProductUseCase: CreateProductUseCase,
+    private val createProductUseCase: CreateProductUseCase,
 //    private val readAllProductsUseCase: ReadAllProductsUseCase,
 //    private val readProductByNameUseCase: ReadProductByNameUseCase
 ) {
@@ -25,7 +25,7 @@ class ProductController(
     suspend fun postProduct(@RequestBody requestDTO: ProductRequestDTO) {
         logger.info("Received request to create product: $requestDTO")
         println("Received request to create product: $requestDTO")
-//        createProductUseCase.execute(requestDTO.toDomain())
+        createProductUseCase.execute(requestDTO.toDomain())
     }
 
 //    @GetMapping

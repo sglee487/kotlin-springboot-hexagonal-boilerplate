@@ -7,7 +7,16 @@ import com.fasterxml.jackson.annotation.JsonProperty
 data class ProductRequestDTO(
     @JsonProperty("name")
     val name: String
-)
+) {
+    fun toDomain(): Product {
+        return Product(
+            name = kotlin.runCatching { ProductName.fromValue(name) }.getOrElse {
+                throw IllegalArgumentException("Invalid product name")
+            }
+        )
+    }
+}
+
 data class ProductResponseDTO(
     val id: String,
     val name: String
