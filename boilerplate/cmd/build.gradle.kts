@@ -12,6 +12,7 @@ dependencies {
     compileOnly(project(":domain"))
     compileOnly(project(":application"))
     compileOnly(project(":adapter"))
+    compileOnly(project(":infrastructure"))
 
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.springframework.boot:spring-boot-starter-webflux")

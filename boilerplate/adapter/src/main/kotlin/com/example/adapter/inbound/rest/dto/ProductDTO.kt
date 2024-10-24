@@ -26,3 +26,5 @@ data class ProductResponseDTO(
         name = product.name.value
     )
 }
+
+fun Product.toResponseDTO() = ProductResponseDTO(this)
