@@ -19,3 +19,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.data:spring-data-r2dbc")
 }
+
+kotlin {
+    jvmToolchain(21)
+}
