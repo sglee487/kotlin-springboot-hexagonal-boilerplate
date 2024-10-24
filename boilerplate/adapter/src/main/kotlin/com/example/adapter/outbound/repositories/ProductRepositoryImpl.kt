@@ -16,13 +16,13 @@ import java.util.*
 // jpa의 경우 impl은 infrastructure에 구성해야 하겠지만 spring jpa가 알아서 만들어준다.
 @Repository
 class ProductRepositoryImpl(
-    private val jpaProductRepository: JpaProductRepository
+    private val jpaProductRepository: JpaProductRepository,
 ) : ProductPort {
-    override suspend fun add(product: Product): Product {
-        return withContext(Dispatchers.IO) {
+    override suspend fun add(product: Product): Product =
+        withContext(Dispatchers.IO) {
             jpaProductRepository.save(product.toEntity())
         }.toDomain()
-    }
+
 
     override suspend fun getAll(): List<Product> =
         jpaProductRepository.findAll()

@@ -9,10 +9,10 @@ group = "com.example.cmd"
 version = "0.1.0"
 
 dependencies {
-    compileOnly(project(":domain"))
-    compileOnly(project(":application"))
-    compileOnly(project(":adapter"))
-    compileOnly(project(":infrastructure"))
+    implementation(project(":domain"))
+    implementation(project(":application"))
+    implementation(project(":adapter"))
+    implementation(project(":infrastructure"))
 
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.springframework.boot:spring-boot-starter-webflux")

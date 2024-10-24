@@ -9,7 +9,7 @@ group = "com.example.application"
 version = "0.1.0"
 
 dependencies {
-    compileOnly(project(":domain"))
+    implementation(project(":domain"))
     implementation("org.springframework.boot:spring-boot-starter")
 }
 

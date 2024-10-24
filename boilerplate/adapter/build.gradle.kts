@@ -10,8 +10,8 @@ version = "0.1.0"
 
 
 dependencies {
-    compileOnly(project(":domain"))
-    compileOnly(project(":application"))
+    implementation(project(":domain"))
+    implementation(project(":application"))
 
     implementation("org.springframework.boot:spring-boot-starter")
     implementation("org.springframework.boot:spring-boot-starter-webflux")
