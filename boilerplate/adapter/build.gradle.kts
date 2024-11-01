@@ -27,3 +27,7 @@ dependencies {
 kotlin {
     jvmToolchain(21)
 }
+
+tasks.getByName<Jar>("bootJar") {
+    enabled = false
+}
