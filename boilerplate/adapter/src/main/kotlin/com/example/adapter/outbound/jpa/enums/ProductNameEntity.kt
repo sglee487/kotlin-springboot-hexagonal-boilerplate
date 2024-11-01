@@ -1,4 +1,4 @@
-package com.example.adapter.outbound.enums
+package com.example.adapter.outbound.jpa.enums
 
 enum class ProductNameEntity(
     val value: String

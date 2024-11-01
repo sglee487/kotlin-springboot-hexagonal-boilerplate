@@ -1,8 +1,8 @@
-package com.example.adapter.outbound.repositories
+package com.example.adapter.outbound.jpa.repositories
 
-import com.example.adapter.outbound.interfaces.JpaProductRepository
-import com.example.adapter.outbound.mappers.toDomain
-import com.example.adapter.outbound.mappers.toEntity
+import com.example.adapter.outbound.jpa.interfaces.JpaProductRepository
+import com.example.adapter.outbound.jpa.mappers.toDomain
+import com.example.adapter.outbound.jpa.mappers.toEntity
 import com.example.application.ports.outbound.ProductPort
 import com.example.domain.entities.Product
 import com.example.domain.enums.ProductName

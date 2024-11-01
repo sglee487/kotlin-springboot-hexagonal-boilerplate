@@ -1,7 +1,7 @@
 plugins {
     kotlin("jvm")
     kotlin("plugin.spring") version "1.9.25"
-    id("org.springframework.boot") version "3.3.4"
+    id("org.springframework.boot") version "3.3.1"
     id("io.spring.dependency-management") version "1.0.11.RELEASE"
 }
 

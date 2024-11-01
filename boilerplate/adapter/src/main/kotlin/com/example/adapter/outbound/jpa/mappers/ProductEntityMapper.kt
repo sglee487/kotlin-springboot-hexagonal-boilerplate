@@ -1,7 +1,7 @@
-package com.example.adapter.outbound.mappers
+package com.example.adapter.outbound.jpa.mappers
 
-import com.example.adapter.outbound.entities.ProductEntity
-import com.example.adapter.outbound.enums.ProductNameEntity
+import com.example.adapter.outbound.jpa.entities.ProductEntity
+import com.example.adapter.outbound.jpa.enums.ProductNameEntity
 import com.example.domain.entities.Product
 import com.example.domain.enums.ProductName
 

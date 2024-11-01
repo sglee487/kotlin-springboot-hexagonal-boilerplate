@@ -1,6 +1,6 @@
-package com.example.adapter.outbound.entities
+package com.example.adapter.outbound.jpa.entities
 
-import com.example.adapter.outbound.enums.ProductNameEntity
+import com.example.adapter.outbound.jpa.enums.ProductNameEntity
 import jakarta.persistence.*
 import java.util.*
 
