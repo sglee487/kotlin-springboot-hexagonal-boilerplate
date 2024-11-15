@@ -24,3 +24,8 @@ dependencies {
 kotlin {
     jvmToolchain(21)
 }
+
+tasks.named<org.springframework.boot.gradle.tasks.bundling.BootJar>("bootJar") {
+    mainClass.set("com.example.cmd.Application")
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
