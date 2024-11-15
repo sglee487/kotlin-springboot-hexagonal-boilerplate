@@ -19,6 +19,7 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.data:spring-data-r2dbc")
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
 
     // request body json null handling
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
